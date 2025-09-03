@@ -1,4 +1,4 @@
-/ For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/java
 {
 "name": "Java",
@@ -17,17 +17,26 @@
 "vscode": {
 "settings": {
 // Disable quick suggestions as you type
-"editor.quickSuggestions": {
-"other": "off",
-"comments": "off",
-"strings": "off"
+"editor.quickSuggestions": false,
+// Disables quick suggestions for Java files specifically
+ "[java]": {
+    "editor.quickSuggestions": false
 },
 // Disable inline suggestions (e.g., from GitHub Copilot)
 "editor.inlineSuggest.enabled": false,
 // Disable hover popups
 "editor.hover.enabled": false,
 // Disable GitHub Copilot completely if it's installed
-"github.copilot.enable": false
+"github.copilot.enable": false,
+// Disable IntelliCode completions for Java
+"java.completion.enabled": false,
+"java.completion.favoriteStaticMembers": [],
+"java.signatureHelp.enabled": false,
+"java.inlayHints.parameterNames.enabled": "none",
+// Disable AI-specific completions for Java
+"vsintellicode.java.completionsEnabled": false
+//trying others
+
 }
 }
 }
