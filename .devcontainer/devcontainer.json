@@ -17,7 +17,11 @@
 "vscode": {
 "settings": {
 // Disable quick suggestions as you type
-"editor.quickSuggestions": false,
+"editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+},
 // Disables quick suggestions for Java files specifically
  "[java]": {
     "editor.quickSuggestions": false
