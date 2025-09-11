@@ -32,7 +32,7 @@ public class Microwave{
     }
     public void beep()
     {
-        System.out.println("beep");
+        System.out.println("BEEP");
     }
     public void defrost(int time)
     {
